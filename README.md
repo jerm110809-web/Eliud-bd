@@ -1,1 +1,20 @@
-[# Eliud-bd](https://github.com/jerm110809-web/Eliud-bd/blob/main/conexion.php#:~:text=L%C3%89AME.md-,conexi%C3%B3n.php,-Pan%20rallado)
+<?php
+
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = "";
+$basedatos = "tienda";
+
+// Crear conexión
+$conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+
+// Verificar conexión
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+echo "<h2>Conexión exitosa a la base de datos 'tienda'</h2>";
+
+mysqli_close($conexion);
+
+?>
