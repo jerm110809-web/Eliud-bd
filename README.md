@@ -15,6 +15,5 @@ if (!$conexion) {
 
 echo "<h2>Conexión exitosa a la base de datos 'tienda'</h2>";
 
-mysqli_close($conexion);
 
-?>
+
