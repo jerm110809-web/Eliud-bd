@@ -10,4 +10,4 @@ if (!$conexion) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 
-echo "<h2>Conexión exitosa a la base de datos 'tienda'</h2>
+echo "<h2>Conexión exitosa a la base de datos</h2>
